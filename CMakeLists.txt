@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.15)
+project(ClassTool)
+#set(CMAKE_AUTOMOC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+add_subdirectory(platform)
+add_subdirectory(src)
