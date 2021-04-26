@@ -429,6 +429,18 @@ void FileTool::addTimeTagForFile(const QString& file_name)
     file.rename(changed_name);
 }
 
+void FileTool::writeTextFile(QString filename, QVector<QString> str)
+{
+    QFile file(filename);
+    file.open(QIODevice::WriteOnly);
+    for (int i = 0; i < str.size(); i++)
+    {
+        file.write(str.at(i).toLocal8Bit());
+        file.write("\n");
+    }
+    file.close();
+}
+
 //------------------------------------------------------------------------------------------------------------
 //返回目录所占空间单位为byte
 qint64 DirTool::getDirSpace(const QString& path)

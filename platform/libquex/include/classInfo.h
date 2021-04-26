@@ -83,6 +83,10 @@ public:
     QList<FunctionInfo> functionInfo[3]; //public protected private   
     QList<Variate> variate[3];
     void clear();
+public:
+    QList<ClassInfo*> parentLink;
+    QList<ClassInfo*> childLink;
+    QList<ClassInfo*> includeLink;
 };
 
 #endif // CLASSINFO_H

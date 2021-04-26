@@ -10,4 +10,6 @@ void ClassInfo::clear()
     variate[0].clear();
     variate[1].clear();
     variate[2].clear();
+    parentLink.clear();
+    includeLink.clear();
 }

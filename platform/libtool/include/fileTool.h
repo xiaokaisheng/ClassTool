@@ -57,6 +57,8 @@ public:
     static bool writeDataFile(const QString& filepath, const QByteArray& data);
     static bool readTextFile(const QString& filepath, QStringList& text);
     static void addTimeTagForFile(const QString& file_name);
+
+    static void writeTextFile(QString filename, QVector<QString> str);
 };
 
 class DirTool
